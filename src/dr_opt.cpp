@@ -57,4 +57,10 @@ namespace dr {
 		// Check if option exists in command here
 		return options.find(flag) != options.end();
 	}
+
+
+	int getoptc() {
+		ArgMap& options = getoptmap();
+		return options.size();
+	}
 }

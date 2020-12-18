@@ -27,5 +27,7 @@ int main(int argc, char* args[]) {
 		std::cout << "d flag intentionally not found" << std::endl;
 	}
 
+	std::cout << "Options count: " << dr::getoptc() << std::endl;
+
 	return 0;
 }
