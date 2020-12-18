@@ -28,7 +28,7 @@ If an option is accompanied by a string parameter, then that parameter is return
 * batch and bash scripts create vs2019 (Solution) and gmake2 (Makefile) files respectfully
 
 ### Installing
-* Copy the dr_arg header and source files into a project
+* Copy the dr_opt header and source file (not test.cpp) into a project
 
 ## Example
 ---
@@ -37,13 +37,13 @@ If an option is accompanied by a string parameter, then that parameter is return
 #include <iostream>
 #include <string>
 
-#include "dr_arg.h"
+#include "dr_opt.h"
 
 int main(int argc, char* args[]) {
-    dr::setarg(argc, args);
+    dr::setopt(argc, args);
 
     // You can also use flags more than one character in length
-    if(dr::hasarg("a")) {
+    if(dr::hasopt("a")) {
         // "-a" flag was found in command options
         std::string aOpt = dr::getopt("a");
         // "aOpt" now contains the "-a" flag parameter
