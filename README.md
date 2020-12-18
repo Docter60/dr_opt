@@ -8,7 +8,7 @@ A simple C++ getopt component
 dr_opt is a command options parser (similar to the most basic functionality of getopt.h) that I can use between multiple platforms. *argc* and *args* must be provided to *setopt* before using the other functions.
 
 ### Functions
-*void setarg(int argc, char\* args[]);*
+*void setopt(int argc, char\* args[]);*
 <br />
 Used to format all incoming command line option data.
 <br /><br />
